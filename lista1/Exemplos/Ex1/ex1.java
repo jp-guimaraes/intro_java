@@ -31,7 +31,7 @@ public class ex1 {
         	System.out.println("Reprovado!");
         }
         
-        System.out.println("Fim");
+        System.out.println("Fim!");
     }
 }
 
