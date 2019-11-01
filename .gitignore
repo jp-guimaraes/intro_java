@@ -1,3 +1,6 @@
 *.log
+*.lot
+*.lof
+*.toc
 *.aux
 *.out
