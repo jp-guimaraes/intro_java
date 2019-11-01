@@ -1,7 +1,6 @@
-
-public class ex1 {
+public class exemplo_03 {
 	public static void main(String[] args) {
-        System.out.println("Olá mundo, començando os testes com variáveis!");
+        System.out.println("Olá mundo, començando os testes com controle de fluxo, estruturas de decisão!");
         
         double nota1 = 8.5;
         double nota2 = 7.2;
@@ -11,8 +10,7 @@ public class ex1 {
         System.out.println("e");
         System.out.println(nota2); 
         
-        
-        
+               
         double media = (nota1+nota2)/2;
 
         System.out.println("Média calculada: ");

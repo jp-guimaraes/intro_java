@@ -2,6 +2,7 @@
 \usepackage[brazil]{babel} 
 \usepackage[utf8]{inputenc}
 
+
 \usepackage{listings}
 \usepackage{color}
 
@@ -35,33 +36,132 @@
 
 \maketitle %cria o título
 
-\section{Introdução}
+\section{Instruções}
 
-Todas as questões devem utilizar a linguagem de programação Java.
+\begin{itemize}
+
+  \item Todas as questões devem utilizar a linguagem de programação Java.
+
+  \item Cada questão deve ter seu próprio código independente.
+
+  \item O repositório contém alguns exemplos de códigos funcionais que ajudam na resolução da lista. A maioria das questões podem ser resolvidas alterando ou combinando esses códigos. Cada um deles é detalhado na seção a seguir chamada Revisão.
+
+  \item Para submeter a lista para avaliação basta criar um único arquivo .rar ou .zip contendo todos os códigos implementados. Eles devem ser submetidos via SUAP.
+  \end{itemize}
+
 
 \section{Revisão}
 
-\begin{lstlisting}
-// Hello.java
-import javax.swing.JApplet;
-import java.awt.Graphics;
+Dentro do repositório existe uma pasta denominada exemplos. Nela pode-se encontrar alguns códigos básicos mostrando a sintaxe de Java.
 
-public class Hello extends JApplet {
-    public void paintComponent(Graphics g) {
-        g.drawString("Hello, world!", 65, 95);
-    }    
-}
-\end{lstlisting}
+\subsection{Exemplo 1 - Código Olá mundo}
+
+No primeiro exemplo temos o famoso olá mundo, mostrando como imprimir no terminal.
+
+% \begin{lstlisting}
+% // Hello.java
+% public class ex1 {
+% 	public static void main(String[ ] args) {
+%         System.out.println("Ola mundo!");
+%     }
+% }
+% \end{lstlisting}
+
+\subsection{Exemplo 2 - Entrada de dados}
+
+O segundo exemplo mostra como fazer entrada de dados pelo terminal para variáveis dentro do seu programa.
+
+% \begin{lstlisting}
+% // Hello.java
+% public class ex1 {
+% 	public static void main(String[ ] args) {
+%         System.out.println("Ola mundo!");
+%     }
+% }
+% \end{lstlisting}
+
+
+\subsection{Exemplo 3 - Calculando uma média}
+
+O terceiro exemplo mostra como manipular duas variáveis que armazenam duas notas para calcular a média entre elas.
+
+% \begin{lstlisting}
+% public class exemplo_03 {
+%   public static void main(String[] args) {
+%         System.out.println("Ola mundo, començando os testes com variaveis!");
+        
+%         double nota1 = 8.5;
+%         double nota2 = 7.2;
+
+%         System.out.println("Notas informadas: ");
+%         System.out.println(nota1);
+%         System.out.println("e");
+%         System.out.println(nota2);        
+        
+%         double media = (nota1+nota2)/2;
+
+%         System.out.println("Média calculada: ");
+%         System.out.println(media);       
+%     }
+% }
+
+
+% \end{lstlisting}
+
+
+
+\subsection{Exemplo 4 - Controle de fluxo}
+
+O quarto exemplo  mostra como manipular duas variáveis que armazenam duas notas para calcular a média entre elas.
+
+% \begin{lstlisting}
+% public class exemplo_03 {
+%   public static void main(String[] args) {
+%         System.out.println("Olá mundo, començando os testes com controle de fluxo, estruturas de decisão!");
+        
+%         double nota1 = 8.5;
+%         double nota2 = 7.2;
+
+%         System.out.println("Notas informadas: ");
+%         System.out.println(nota1);
+%         System.out.println("e");
+%         System.out.println(nota2);         
+               
+%         double media = (nota1+nota2)/2;
+
+%         System.out.println("Média calculada: ");
+%         System.out.println(media);              
+        
+%         boolean teste = (media >= 6.0);
+        
+%         // Imprimindo o valor do booleano
+%         System.out.println(teste);
+        
+%         if(teste) {
+%           System.out.println("Aprovado!");
+%         }
+%         else {
+%           System.out.println("Reprovado!");
+%         }
+        
+%         System.out.println("Fim!");
+%     }
+% }
+
+
+% \end{lstlisting}
+
 
 
 \section{Questões}
 
 \begin{enumerate}
-
-	\item Escreva um programa em Java que calcule a média entre duas notas.
-
-
-
+  \item Crie um programa em Java que calcule a média entre três notas.
+  \item Crie um programa que peça duas notas ao usuário e calcule a média entre elas.
+  \item Faça um programa que pergunte a idade ao usuário. Processe essa entrada e diga se o usuário é maior de idade ou não.
+  \item Faça um programa que calcule a área de um quadrado de lado L. O tamanho L deve ser pedido ao usuário.
+  \item Crie um programa que, dado duas notas fornecidas pelo usuário, diga se ele foi APROVADO (média $>=$ 6), se ele está REPROVADO (média $<3$), ou em recuperação (caso contrário).
+  \item Faça um programa que calcula a média ponderada entre 3 notas. Tanto as notas quanto os pesos das notas devem ser pedidos ao usuário.
 \end{enumerate}
 
 
