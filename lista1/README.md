@@ -27,20 +27,34 @@ public class ex1 {
 
 O segundo exemplo mostra como fazer entrada de dados pelo terminal para variáveis dentro do seu programa.
 
+```java
+`import java.util.Scanner;  // Import the Scanner class
 
-// Hello.java
-public class ex1 {
-	public static void main(String[ ] args) {
-        System.out.println("Ola mundo!");
+public class exemplo_02 {
+	public static void main(String[] args) {
+        System.out.println("Testando entrada de dados");
+        
+        Scanner meu_scanner = new Scanner(System.in);  // Create a Scanner object
+        System.out.println("Qual é a sua idade?");
+
+        // Para uma lista completa de opções 
+        // https://www.w3schools.com/java/java_user_input.asp
+        
+        int x = meu_scanner.nextInt();  
+
+        System.out.println("Nossa! Você já tem " + x + " anos??" ) ;       
+        
     }
 }
 
+
+```
 
 
 ### Exemplo 3 - Calculando uma média
 
 O terceiro exemplo mostra como manipular duas variáveis que armazenam duas notas para calcular a média entre elas.
-
+```java
 public class exemplo_03 {
   public static void main(String[] args) {
               
@@ -58,14 +72,14 @@ public class exemplo_03 {
         System.out.println(media);       
     }
 }
-
+```
 
 
 
 ### Exemplo 4 - Controle de fluxo
 
 O quarto exemplo  mostra como manipular duas variáveis que armazenam duas notas para calcular a média entre elas.
-
+```java
 public class exemplo_03 {
   public static void main(String[] args) {
         
@@ -96,8 +110,8 @@ public class exemplo_03 {
         
         System.out.println("Fim!");
     }
-}
-
+} 
+```
 
 
 ## Questões
