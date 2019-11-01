@@ -2,6 +2,31 @@
 \usepackage[brazil]{babel} 
 \usepackage[utf8]{inputenc}
 
+\usepackage{listings}
+\usepackage{color}
+
+\definecolor{dkgreen}{rgb}{0,0.6,0}
+\definecolor{gray}{rgb}{0.5,0.5,0.5}
+\definecolor{mauve}{rgb}{0.58,0,0.82}
+
+\lstset{frame=tb,
+  language=Java,
+  aboveskip=3mm,
+  belowskip=3mm,
+  showstringspaces=false,
+  columns=flexible,
+  basicstyle={\small\ttfamily},
+  numbers=none,
+  numberstyle=\tiny\color{gray},
+  keywordstyle=\color{blue},
+  commentstyle=\color{dkgreen},
+  stringstyle=\color{mauve},
+  breaklines=true,
+  breakatwhitespace=true,
+  tabsize=3
+}
+
+
 \begin{document} 
 
 \title{Lista de exercícios 1} 
@@ -16,6 +41,17 @@ Todas as questões devem utilizar a linguagem de programação Java.
 
 \section{Revisão}
 
+\begin{lstlisting}
+// Hello.java
+import javax.swing.JApplet;
+import java.awt.Graphics;
+
+public class Hello extends JApplet {
+    public void paintComponent(Graphics g) {
+        g.drawString("Hello, world!", 65, 95);
+    }    
+}
+\end{lstlisting}
 
 
 \section{Questões}
@@ -30,13 +66,10 @@ Todas as questões devem utilizar a linguagem de programação Java.
 
 
 
-\begin{thebibliography}{99} % Até 99 referencias
-\bibitem{wiki} % este é o nome que é usado para citar a referencia
-http://en.wikipedia.org/ % referência
-\bibitem{stern}
-http://www.ime.usp.br/$\sim$ jstern
+% \begin{thebibliography}{99} % Até 99 referencias
+% \bibitem{wiki} % este é o nome que é usado para citar a referencia
+% http://en.wikipedia.org/ % referência
 
-\end{thebibliography}
+% \end{thebibliography}
 
-\end{document} %fim do documento. O que vem depois daqui não é gerado
-
+\end{document}
