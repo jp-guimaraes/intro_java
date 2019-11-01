@@ -14,14 +14,14 @@ Dentro do repositório existe uma pasta denominada exemplos. Nela pode-se encont
 ### Exemplo 1 - Código Olá mundo
 
 No primeiro exemplo temos o famoso olá mundo, mostrando como imprimir no terminal.
-
+```java
 // Hello.java
 public class ex1 {
 	public static void main(String[ ] args) {
         System.out.println("Ola mundo!");
     }
 }
-
+````
 
 ### Exemplo 2 - Entrada de dados
 
