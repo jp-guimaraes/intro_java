@@ -1,0 +1,266 @@
+\documentclass[10pt]{article}
+\usepackage{geometry}                % See geometry.pdf to learn the layout options. There are lots.
+\geometry{letterpaper}                   % ... or a4paper or a5paper or ... 
+%\geometry{landscape}                % Activate for for rotated page geometry
+%\usepackage[parfill]{parskip}    % Activate to begin paragraphs with an empty line rather than an indent
+
+%%%%%%%%%%%%%%%%%%%%
+\newcommand{\hide}[1]{}
+
+\usepackage{natbib}
+\usepackage{xcolor}
+\usepackage{url}
+\usepackage{hyperref}
+\usepackage{mathtools}
+
+\hide{
+\usepackage{amscd}
+\usepackage{amsfonts}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{amsthm}
+\usepackage{cases}		 
+\usepackage{cutwin}
+\usepackage{enumerate}
+\usepackage{epstopdf}
+\usepackage{graphicx}
+\usepackage{ifthen}
+\usepackage{lipsum}
+\usepackage{mathrsfs}	
+\usepackage{multimedia}
+\usepackage{wrapfig}
+}
+\bibliographystyle{humanbio}
+
+	 
+%\input{/usr/local/LATEX/Lee_newcommands.tex}
+\newcommand{\itemlist}[1]{\begin{itemize}#1\end{itemize}}
+\newcommand{\enumlist}[1]{\begin{enumerate}#1\end{enumerate}}
+\newcommand{\desclist}[1]{\begin{description}#1\end{description}}
+
+\newcommand{\Answer}[1]{\begin{quote}{\color{blue}#1}\end{quote}}
+\newcommand{\AND}{\wedge}
+\newcommand{\OR}{\vee}
+\newcommand{\ra}{\rightarrow}
+\newcommand{\lra}{\leftrightarrow}
+
+\title {Lista de exercíos}
+\author{João Paulo F. Guimarães \\
+}
+\date{{\bf Honor Statement}:  By submitting this work, I certify that, with the exception of LaTeX templates and text whose sources I cite, every keystroke in the {\color{blue}answers} was typed by me.}
+%\date{}                                           % Activate to display a given date or no date
+
+\begin{document}
+\maketitle
+Instructor:  Prof. Lee Altenberg.  These problems are either original, or perturbations of Rosen, K. H. 2012. Discrete Mathematics and its Applications. McGraw-Hill Education, New York, Seventh edition. %\citet{Rosen:2012:Discrete}.
+
+\section{\citet{Rosen:2012:Discrete}1: The Foundations: Logic and Proofs:}
+\itemlist{
+\item 1.1 Propositional Logic
+\item 1.2 Applications of Propositional Logic
+}
+
+
+\section*{Problems}
+\begin{enumerate}
+\item \ [Variation on 1.1\#1] Which of these sentences are propositions? What are the
+truth values of those that are propositions?
+\begin{enumerate}
+\item Boston is the capital of London. \qquad [5 points]
+\Answer{Since this is a declarative sentence, it is a proposition. This definition is found in Rosen (2012, p.2).It is a false proposition and the correct capital can be found here https://simple.wikipedia.org/wiki/Boston }
+
+\item Lahaina was the capital of Hawai`i.\qquad [5 points]
+\Answer{Since this is a declarative sentence, it is a proposition. This definition is found in Rosen (2012, p.2). It is a true proposition and can be verified here \url{https://en.wikipedia.org/wiki/Lahaina,_Hawaii}}
+\item 7 + 7 = 7.\qquad [5 points]
+\Answer{An equation is a proposition as stated in Rosen (2012, Example 1 p.2) We know from arithmetic that 7+7=7 is FALSE.}
+
+\item 50 + 70 = 120.\qquad [5 points]
+\Answer{An equation is a proposition as stated in Rosen (2012, Example 1 p.2) We know from arithmetic that 50+70=120 is TRUE}
+
+\item Add 5 + 7. \qquad [5 points]
+\Answer{An equation is a proposition as stated in Rosen (2012, Example 1 p.2) We know from arithmetic that 5+7=12 is TRUE}
+
+\end{enumerate}
+
+\item \ [Variation on 1.1\#4] What is the negation of each of these propositions?  What is the truth value of the negation?
+\begin{enumerate}
+\item There are 366 days in a leap year. \qquad [5 points]
+\Answer{"There are not 366 days in a leap year."Since the original is True based on the common definition of a leap year, the negation is FALSE.}
+
+\item Truth isn't truth. \qquad [5 points]
+\Answer{"Truth is truth." Since the original is FALSE based the fact that truth is in fact truth, the negation is TRUE}
+
+\item A gigabyte is less than a gigahertz.\qquad [5 points]
+\Answer{"A gigabyte is more than a gigahertz." The original is FALSE since a gigabyte is the measure of computer storage capacity, and a gigahertz is the speed of processing, so comparing the two doesn't make sense. Since the statement doesn't make sense it is FALSE. The negation of this statement is also FALSE. }
+
+\item 64 is a perfect square. \qquad [5 points]
+\Answer{"64 is not a perfect square." Since the original statement is TRUE based on definition of a perfect square, the negation is FALSE.}
+
+\end{enumerate}
+
+\item \ [Variation on 1.1\#14] Let p, q, and r be the propositions
+\desclist{
+\item[p :] You did not get an A on the final exam.
+\item[q :] You do every exercise in this book.
+\item[r :] You get an A in this class.
+}
+Write these propositions using p, q, and r and logical connectives (including negations).
+\begin{enumerate}
+\item You get an A in this class, but you do not do every exercise in this book.\qquad [5 points]
+\Answer{From Rosen (2012 Def.2, p.4) "but" sometimes is used instead of “and” in a conjunction. Since q is "You do every exercise in this book" the opposite of this is needed. This gives r$\wedge$ $\neg$ q.}
+
+\item You get an A on the final, you do every exercise in this book, and you get an A in this class.\qquad [5 points]
+\Answer{p $\wedge$ q $\wedge$ r}
+
+\item To get an A in this class, it is necessary for you to get an A on the final.\qquad [5 points]
+\Answer{From Rosen (2012, Def. 5, p. 6), “it is necessary” is a conditional. Since p is necessary for r, that means $\neg$ p $\rightarrow$ $\neg$ r.}
+
+\item You get an A on the final, but you don't do every exercise in this book; nevertheless, you get an A in this class.\qquad [5 points]
+\Answer{ While Rosen (2012, Def. 2, p. 4) gives “but” as a conjunction, he says nothing about “nevertheless”. It is clear from its use that “nevertheless” is also a conjunction. So we get, p $\wedge$ $\neg$ q $\wedge$ r}
+
+\item Getting an A on the final and doing every exercise in this book is sufficient for getting an A in this class.\qquad [5 points]
+\Answer{From Rosen (2012, Def. 5, p. 6), “is sufficient for” is a conditional. This gives (p $\wedge$ q) $\rightarrow$ r}
+
+\item You will get an A in this class if and only if you either do every exercise in this book or you get an A on the final. \qquad [5 points]
+\Answer{From Rosen (2012, Def.6, p.9) p $\leftrightarrow$ q is the proposition p "if and only if q" is a bi-conditional. Therefore, r $\leftrightarrow$ (q $\vee$ p).}
+
+\end{enumerate}
+\item \ [Variation on 1.1\#31]  Construct a truth table for each of these compound propositions.
+\begin{enumerate}
+\item $\lnot p \wedge p$ \qquad [10 points]
+\Answer{Since $\lnot$ p $\wedge$ p is a contradiction (looking ahead at Rosen (2012, Definition 1, p. 25)), it is always FALSE.
+$$
+\begin{array}{||c|c|c||c||}
+\hline
+p  & & \lnot p \wedge p \\
+\hline
+\hline
+T & & F\\
+\hline
+F  & & F\\
+\hline
+\end{array}
+$$
+}
+
+\item $ \lnot p \vee p$	\qquad [10 points]
+\Answer{Since one of p or ¬p is always true, $\lnot$p $\vee$ p is a tautology (looking ahead at Rosen
+(2012, Definition 1, p. 25), and it is always TRUE.
+$$
+\begin{array}{||c|c|c||c||}
+\hline
+p  && \lnot p \vee p \\
+\hline
+\hline
+T & & T\\
+\hline
+F  & & T\\
+\hline
+\end{array}
+$$
+}
+
+\item $(\lnot p \vee q) \rightarrow q $\qquad [10 points]
+\Answer{Replace this text with your answer.  Here is a template truth table:
+$$
+\begin{array}{|c|c|c|c||c|}
+\hline
+p & q & (\lnot p \vee q)& (\lnot p \vee q) \rightarrow q   \\
+\hline
+\hline
+T & T & T & T \\
+\hline
+T & F & F & T \\
+\hline
+F & T & T & T \\
+\hline
+F & F & T & F \\
+\hline
+\end{array}
+$$
+}
+
+\item $ (p \vee  q) \rightarrow (q \wedge p)$\qquad [10 points]
+\Answer{Evaluate the parts before combining them. The combination is false only when (p$\vee$q) is T but (q$\wedge$p) is F
+$$
+\begin{array}{|c|c|c|c||c|}
+\hline
+p & q & (p\vee q) & (p \wedge q) & (p \vee  q) \rightarrow (q \wedge p) \\
+\hline
+\hline
+T & T & T & T & T\\
+\hline
+T & F & T & F & F\\
+\hline
+F & T & T & F & F\\
+\hline
+F & F & F & F & T\\
+\hline
+\end{array}
+$$
+}
+
+\end{enumerate}
+
+\item \ [Variation on 1.2\#7]  
+Express these system specifications using the propositions:
+\desclist{
+\item [p] ``The message is marked as spam'' and 
+\item [q] ``The message contains the word `lottery' '' 
+}
+together with logical connectives (including negations)
+\begin{enumerate}
+\item ``The message is marked as spam whenever the message contains the word `lottery'.''\qquad [5 points]
+\Answer{From Rosen (2012, Def. 5, p. 6), “whenever” is a conditional. Therefore we get q $\rightarrow$ p}
+
+\item  ``The message contains the word `lottery' and it was marked as spam.''\qquad [5 points]
+\Answer{From Rosen (2012, Def.2 p. 4)  The conjunction of p and q, denoted by p $\wedge$ q, is the proposition "p and q", we get q$\wedge$p }
+
+\item ``It is not necessary to mark the message as spam unless it contains the word `lottery'.''\qquad [5 points]
+\Answer{From Rosen (2012, Def. 5, p. 6), "It is necessary" is a conditional, so we get q $\rightarrow$ p. However since it is not necessary we have to use the negation of that statement so, q $\rightarrow\lnot$ p. The statement however includes the word "unless", from Rosen (2012, p.6) so $\lnot$q $\rightarrow$(q $\rightarrow\lnot$ p)}
+
+\item ``When a message does not contain the word `lottery' it is marked as spam.'' \qquad [5 points]
+\Answer{From Rosen (2012, Def. 5, p. 6), “When” is a conditional. It translates to $\lnot$q $\rightarrow$ $\lnot$p.}
+
+\end{enumerate}
+
+\item EXTRA CREDIT.   \ [Variation on 1.2\#34] 
+
+Five friends have access to a chat room. Is it possible to determine who is chatting if the following information is known? Explain your reasoning.
+\begin{enumerate}
+\item If Adam is chatting, so is Cindy. 
+\item If Valerie is chatting, then so are Adam and Doug. 
+\item Either Cindy or Laura, but not both, are chatting. 
+\item Either Doug or Valerie, or both, are chatting.
+\item Laura and Doug are either both chatting or neither is. 
+\end{enumerate}
+\qquad [20 points]
+\Answer{Replace this text with your answer}
+
+\end{enumerate}	% TOP enumlist
+
+Points: Laulima Max points = 155 = 5 * 19 + 10 * 4 + 20  = 135 points regular + 20 points extra credit.  Your grade will be calculated as (total points)$/135$.
+
+\section*{Academic Standards Reminder}
+See {\bf Laulima $\rightarrow$ Forums $\rightarrow$  MAN ICS-141 Group $\rightarrow$  Course Grading and Policy Questions }
+
+You are encouraged to discuss these problems with your classmates, but when you come to write up your homework, every keystroke of your homework submission must be typed by you, the only exceptions being text you put in quotations where you cite the source, e.g. \emph{``\citet{Rosen:2012:Discrete} makes an error here'' (Prof. Altenberg, in lecture).}.
+
+Any ideas, steps, or other content in your homework that is the work of others must be presented with a citation of whose work that is or the URL of the document if found online, e.g. \emph{At this step we multiply each side by 10 (Cora Spondenz, personal communication)}.
+
+{\bf Submitting the work of others as your own is plagiarism and will result in complete loss of credit for the submission, and subject you to University penalties for academic misconduct.}
+
+\bibliographystyle{humanbio}
+\begin{thebibliography}{}
+
+\bibitem[\protect\astroncite{Rosen}{2012}]{Rosen:2012:Discrete}
+Rosen, K.~H. 2012.
+\newblock {\em Discrete Mathematics and its Applications}.
+\newblock McGraw-Hill Education, New York, {Seventh} edition.
+
+Model Homework - Lee Altenberg
+
+\end{thebibliography}
+
+\end{document}  
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
