@@ -120,4 +120,3 @@ public class exemplo_03 {
 1. Faça um programa que pergunte a idade ao usuário. Processe essa entrada e diga se o usuário é maior de idade ou não.
 1. Faça um programa que calcule a área de um quadrado de lado L. O tamanho L deve ser pedido ao usuário.
 1. Crie um programa que, dado duas notas fornecidas pelo usuário, diga se ele foi APROVADO (média >= 6), se ele está REPROVADO (média <3), ou em recuperação (caso contrário).
-1. Faça um programa que calcula a média ponderada entre 3 notas. Tanto as notas quanto os pesos das notas devem ser pedidos ao usuário.
