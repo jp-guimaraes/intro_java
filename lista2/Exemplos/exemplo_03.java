@@ -1,19 +1,15 @@
-public class exemplo_02 {
+public class exemplo_03 {
 	public static void main(String[] args) {
         
-		int x = 10;
-		int y = 5;
-
-		boolean teste = x>y;
-
+		int contador = 0;
+		
 		System.out.println("antes do while");
 
-		while(teste){
+		while(contador < 3){
+			
 			System.out.println("dentro!!");
-			x = x-1;
-			teste = x>y;
-		}
-		
+			contador = contador + 1;
+		}		
 
 		System.out.println("depois do while");
 

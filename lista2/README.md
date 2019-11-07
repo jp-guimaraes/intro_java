@@ -36,25 +36,24 @@ Quando a variável `teste` é verdadeira o conteúdo do `if` é executado. Caso 
 
 O comando while tem um funcionamento muito parecido com o `if`. Entretanto, ao invés de criar uma mera estrutura de decisão ele embute uma estrutura de repetição. Veja:
 ```java
-import java.util.Scanner;  // Import the Scanner class
-
 public class exemplo_02 {
-	public static void main(String[] args) {
-        System.out.println("Testando entrada de dados");
+    public static void main(String[] args) {
         
-        Scanner meu_scanner = new Scanner(System.in);  // Create a Scanner object
-        System.out.println("Qual é a sua idade?");
+        boolean teste = true;
 
-        // Para uma lista completa de opções 
-        // https://www.w3schools.com/java/java_user_input.asp
-        
-        int x = meu_scanner.nextInt();  
+        System.out.println("antes do while");
 
-        System.out.println("Nossa! Você já tem " + x + " anos??" ) ;       
-        
+        while(teste){
+            System.out.println("dentro!");
+        }       
+
+        System.out.println("depois do while");
+
     }
 }
 ```
+
+Assim como no `if`, a variável dentro dos parênteses, neste caso `teste` controla se as instruções dentro do `while` serão ou não executadas. Repare que se `teste = true`, a instrução de impressão da mensagem `depois do if` nunca será executada já que, sempre depois de imprimir `dentro!` o teste continua sendo `true` e voltando a entrar dentro do while e executar a impressão indefinidamente! Esse tipo de situação é chamado de **loop infinito**.
 
 
 ### Exemplo 3 - Calculando uma média

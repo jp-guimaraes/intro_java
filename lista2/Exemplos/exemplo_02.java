@@ -1,16 +1,15 @@
-public class exemplo_01 {
+public class exemplo_02 {
 	public static void main(String[] args) {
         
-		boolean teste = true;
+		boolean teste = false;
 
-		System.out.println("antes do if");
+		System.out.println("antes do while");
 
-		while(false){
+		while(teste){
 			System.out.println("dentro!");
-		}
-		
+		}		
 
-		System.out.println("depois do if");
+		System.out.println("depois do while");
 
     }
 }
