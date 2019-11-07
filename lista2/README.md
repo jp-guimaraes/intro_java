@@ -1,4 +1,4 @@
-# Lista de exercícios 1
+# Lista de exercícios 2
 
 ## Instruções
 
@@ -11,24 +11,32 @@
 
 Dentro do repositório existe uma pasta denominada exemplos. Nela pode-se encontrar alguns códigos básicos mostrando a sintaxe de Java.
 
-### Exemplo 1 - Código Olá mundo
+### Exemplo 1 - Recordando o if/else
 
-No primeiro exemplo temos o famoso olá mundo, mostrando como imprimir no terminal.
+No primeiro exemplo temos uma recapitulação do if/else
 ```java
-// Hello.java
-public class ex1 {
-	public static void main(String[ ] args) {
-        System.out.println("Ola mundo!");
+public class exemplo_01 {
+    public static void main(String[] args) {        
+        boolean teste = true;
+        System.out.println("antes do if");
+        if(false){
+            System.out.println("Arroz!");
+        }
+        else{
+            System.out.println("Feijão!");  
+        }
+        System.out.println("depois do if");
     }
 }
-````
+```
 
-### Exemplo 2 - Entrada de dados
+Quando a variável `teste` é verdadeira o conteúdo do `if` é executado. Caso contrário, ou seja, quando o conteúdo da variável `teste` é falsa, as instruções que estão no `else` é que são executadas.
 
-O segundo exemplo mostra como fazer entrada de dados pelo terminal para variáveis dentro do seu programa.
+### Exemplo 2 - Estruturas de repetição - `while`
 
+O comando while tem um funcionamento muito parecido com o `if`. Entretanto, ao invés de criar uma mera estrutura de decisão ele embute uma estrutura de repetição. Veja:
 ```java
-`import java.util.Scanner;  // Import the Scanner class
+import java.util.Scanner;  // Import the Scanner class
 
 public class exemplo_02 {
 	public static void main(String[] args) {
@@ -46,8 +54,6 @@ public class exemplo_02 {
         
     }
 }
-
-
 ```
 
 
