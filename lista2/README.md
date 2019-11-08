@@ -11,7 +11,7 @@
 
 Dentro do repositório existe uma pasta denominada exemplos. Nela pode-se encontrar alguns códigos básicos mostrando a sintaxe de Java.
 
-### Exemplo 1 - Recordando o if/else
+### Exemplo 1 - Recordando o `if/else`
 
 No primeiro exemplo temos uma recapitulação do if/else
 ```java
@@ -32,7 +32,7 @@ public class exemplo_01 {
 
 ![img_if](https://raw.githubusercontent.com/jp-guimaraes/intro_java/master/assets/if.png)
 
-Quando a variável `teste` é verdadeira o conteúdo do `if` é executado. Caso contrário, ou seja, quando o conteúdo da variável `teste` é falsa, as instruções que estão no `else` é que são executadas.
+Quando o valor da variável `teste` seja verdadeiro (`true`) o conteúdo do `if` é executado. Caso contrário, ou seja, quando o conteúdo da variável `teste` é falso (`false`), as instruções que estão no `else` é que são executadas.
 
 ### Exemplo 2 - Estruturas de repetição - `while`
 
@@ -42,6 +42,16 @@ O comando `while` tem um funcionamento muito parecido com o `if`. Entretanto, ao
 ![imag_while](https://raw.githubusercontent.com/jp-guimaraes/intro_java/master/assets/while.png)
 
 
+Em Java, implementa-se o `while` da seguinte forma:
+
+```java
+while(variavel_de_controle){
+    // instruções executadas enquanto a variável de controle
+    // tiver seu valor true
+}
+````
+
+Veja o exemplo 2:
 ```java
 public class exemplo_02 {
     public static void main(String[] args) {
@@ -97,6 +107,27 @@ public class exemplo_03 {
 A cada passagem pelo loop, a variável auxiliar `contador` tem o seu valor incrementado até que o código `(contador<3)` passa a ser falso ao invés de verdadeiro, quebrando assim o loop. Após a passagem pelo loop pela terceira vez, o loop é quebrado e o comando `System.out.println("depois do while");` é executado. 
 
 
+**Observação**
+
+Em geral a variável booleana `teste` é omitida no processo. Isso é feito incluindo o próprio teste dentro do while. Dessa forma, o código do exemplo 3 seria:
+```java
+public class exemplo_03 {
+    public static void main(String[] args) {
+        
+        int contador = 0;
+        
+        System.out.println("antes do while");
+
+        while(contador <3){
+            System.out.println("dentro!!");
+            contador = contador + 1;           
+        }       
+        
+        System.out.println("depois do while");
+
+    }
+}
+```
 
 ### Exemplo 4 - Controle de fluxo
 
