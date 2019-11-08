@@ -30,11 +30,18 @@ public class exemplo_01 {
 }
 ```
 
+![img_if](https://raw.githubusercontent.com/jp-guimaraes/intro_java/master/assets/if.png)
+
 Quando a variável `teste` é verdadeira o conteúdo do `if` é executado. Caso contrário, ou seja, quando o conteúdo da variável `teste` é falsa, as instruções que estão no `else` é que são executadas.
 
 ### Exemplo 2 - Estruturas de repetição - `while`
 
-O comando while tem um funcionamento muito parecido com o `if`. Entretanto, ao invés de criar uma mera estrutura de decisão ele embute uma estrutura de repetição. Veja:
+O comando `while` tem um funcionamento muito parecido com o `if`. Entretanto, ao invés de criar uma mera estrutura de decisão ele embute uma estrutura de repetição no processo. Veja:
+
+
+![imag_while](https://raw.githubusercontent.com/jp-guimaraes/intro_java/master/assets/while.png)
+
+
 ```java
 public class exemplo_02 {
     public static void main(String[] args) {
@@ -55,29 +62,39 @@ public class exemplo_02 {
 
 Assim como no `if`, a variável dentro dos parênteses, neste caso `teste` controla se as instruções dentro do `while` serão ou não executadas. Repare que se `teste = true`, a instrução de impressão da mensagem `depois do if` nunca será executada já que, sempre depois de imprimir `dentro!` o teste continua sendo `true` e voltando a entrar dentro do while e executar a impressão indefinidamente! Esse tipo de situação é chamado de **loop infinito**.
 
+Caso o valor da variável `teste` seja falso, a string `dentro!!` nunca será impressa. 
 
-### Exemplo 3 - Calculando uma média
 
-O terceiro exemplo mostra como manipular duas variáveis que armazenam duas notas para calcular a média entre elas.
+### Exemplo 3 - Controlando a repetição
+
+O terceiro exemplo mostra como executar um loop num número finito de vezes. Isso é feito através de uma variável auxiliar que vamos chamar de `contador`. Veja:
 ```java
 public class exemplo_03 {
-  public static void main(String[] args) {
-              
-        double nota1 = 8.5;
-        double nota2 = 7.2;
-
-        System.out.println("Notas informadas: ");
-        System.out.println(nota1);
-        System.out.println("e");
-        System.out.println(nota2);        
+    public static void main(String[] args) {
         
-        double media = (nota1+nota2)/2;
+        int contador = 0;
+        
+        System.out.println("antes do while");
 
-        System.out.println("calculando: ");
-        System.out.println(media);       
+
+        boolean teste;
+        teste = (contador < 3);
+
+        while(teste){
+            System.out.println("dentro!!");
+            contador = contador + 1;
+
+            teste = (contador<3); 
+        }       
+
+        System.out.println("depois do while");
+
     }
 }
 ```
+
+
+A cada passagem pelo loop, a variável auxiliar `contador` tem o seu valor incrementado até que o código `(contador<3)` passa a ser falso ao invés de verdadeiro, quebrando assim o loop. Após a passagem pelo loop pela terceira vez, o loop é quebrado e o comando `System.out.println("depois do while");` é executado. 
 
 
 

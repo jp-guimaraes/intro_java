@@ -1,7 +1,7 @@
 public class exemplo_02 {
 	public static void main(String[] args) {
         
-		boolean teste = false;
+		boolean teste = true;
 
 		System.out.println("antes do while");
 
