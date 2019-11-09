@@ -156,8 +156,14 @@ public class exemplo_03 {
 
 
 ## Questões
-1. Crie um programa em Java que calcule a média entre três notas.
-1. Crie um programa que peça duas notas ao usuário e calcule a média entre elas.
-1. Faça um programa que pergunte a idade ao usuário. Processe essa entrada e diga se o usuário é maior de idade ou não.
-1. Faça um programa que calcule a área de um quadrado de lado L. O tamanho L deve ser pedido ao usuário.
-1. Crie um programa que, dado duas notas fornecidas pelo usuário, diga se ele foi APROVADO (média >= 6), se ele está REPROVADO (média <3), ou em recuperação (caso contrário).
+1. Modifique o Exemplo 1 para que o mesmo possa gerar um número aleatório. A variável `teste` vai ser `true` se esse número for maior do que 50 e `false` caso contrário.
+
+1. Modifique o Exemplo 2 para gerar um número aleatório. A variável `teste` vai ser `true` se o número aleatório gerado for maior do que 85. 
+
+1. Modifique o Exemplo 3 para que o novo programa imprima de 1 a 10 usando o `while`.
+
+1. Faça um programa que imprima 100 números aleatórios inteiros. 
+
+1. Crie um programa que, dado duas notas aleatórioas, calcula a média entre eles. Diga se ele foi APROVADO (média >= 6), se ele está REPROVADO (média <3), ou em recuperação (caso contrário). As notas devem ser geradas aleatóriamente.
+
+1. Crie um programa que, enquanto não gera dois números aleatóriamente maiores do que 10, não para a execução.
