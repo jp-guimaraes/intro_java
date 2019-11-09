@@ -6,6 +6,29 @@
 * Cada questão deve ter seu próprio código independente.
 * O repositório contém alguns exemplos de códigos funcionais que ajudam na resolução da lista. A maioria das questões podem ser resolvidas alterando ou combinando esses códigos. Cada um deles é detalhado na seção a seguir chamada Revisão.
 * Para submeter a lista para avaliação basta criar um único arquivo .rar ou .zip contendo todos os códigos implementados. Eles devem ser submetidos via SUAP.
+
+## Biblioteca Auxiliar
+
+
+Para solucionar algumas questões da lista de exercícios a biblioteca `Random` que gera números aleatórios vai ser útil. Veja como ela funciona:
+
+```java
+import java.util.Random;
+
+public class exemplo_05 {
+    public static void main(String[] args) {
+        //Inicializando objeto que gera valores aleatórios 
+        Random random = new Random();
+
+        // Gera um número inteiro aleatório entre 0 e 100
+        int aleatorio = random.nextInt(101);
+                
+        System.out.println("O número gerado foi " + aleatorio);
+
+    }
+}
+```
+A cada execução desse programa um novo número inteiro aleatório vai ser gerado e impresso ao usuário. Esse código pode ser encontrado no Exemplo 5.
  
 ## Revisão 
 
@@ -107,7 +130,8 @@ public class exemplo_03 {
 A cada passagem pelo loop, a variável auxiliar `contador` tem o seu valor incrementado até que o código `(contador<3)` passa a ser falso ao invés de verdadeiro, quebrando assim o loop. Após a passagem pelo loop pela terceira vez, o loop é quebrado e o comando `System.out.println("depois do while");` é executado. 
 
 
-**Observação**
+
+### Exemplo 4 - Controle de fluxo 
 
 Em geral a variável booleana `teste` é omitida no processo. Isso é feito incluindo o próprio teste dentro do while. Dessa forma, o código do exemplo 3 seria:
 ```java
@@ -129,42 +153,6 @@ public class exemplo_03 {
 }
 ```
 
-### Exemplo 4 - Controle de fluxo
-
-O quarto exemplo  mostra como manipular duas variáveis que armazenam duas notas para calcular a média entre elas.
-```java
-public class exemplo_03 {
-  public static void main(String[] args) {
-        
-        double nota1 = 8.5;
-        double nota2 = 7.2;
-
-        System.out.println("Notas informadas: ");
-        System.out.println(nota1);
-        System.out.println("e");
-        System.out.println(nota2);         
-               
-        double media = (nota1+nota2)/2;
-
-        System.out.println("Calculando");
-        System.out.println(media);              
-        
-        boolean teste = (media >= 6.0);
-        
-        // Imprimindo o valor do booleano
-        System.out.println(teste);
-        
-        if(teste) {
-          System.out.println("Aprovado!");
-        }
-        else {
-          System.out.println("Reprovado!");
-        }
-        
-        System.out.println("Fim!");
-    }
-} 
-```
 
 
 ## Questões
