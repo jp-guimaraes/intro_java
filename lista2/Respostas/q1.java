@@ -1,7 +1,7 @@
 import java.util.Random;
 
 
-public class exemplo_01 {
+public class q1 {
 	public static void main(String[] args) {
 
 		Random random = new Random();
@@ -18,11 +18,10 @@ public class exemplo_01 {
         	teste = false;
         }
         
-		
 
 		System.out.println("antes do if");
 
-		if(false){
+		if(teste){
 			System.out.println("Arroz!");
 		}
 		else{
