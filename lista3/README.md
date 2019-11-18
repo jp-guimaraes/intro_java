@@ -88,14 +88,14 @@ public class exemplo_04 {
 Nesse caso, o contador é inicalizado em -5, o teste é `i <20` e o incremento é feito de 2 em 2.
 
 ## Questões
-1. Modifique o Exemplo 1 para que o mesmo possa gerar um número aleatório. A variável `teste` vai ser `true` se esse número for maior do que 50 e `false` caso contrário.
+1. Qual a saída do programa do Exemplo 4? Modifique o incremento para exibir apenas os números positivos da série.
 
-1. Modifique o Exemplo 2 para gerar um número aleatório. A variável `teste` vai ser `true` se o número aleatório gerado for maior do que 85. 
+1. Modifique o exemplo 3 para que o programa imprima de 0 a 5 usando a estrutura de repetição `for`. 
 
-1. Modifique o Exemplo 3 para que o novo programa imprima de 1 a 10 usando o `while`.
+1. Modifique o exemplo 3 para que o programa imprima de 1 a 5 usando a estrutura de repetição `for`.
 
-1. Faça um programa que imprima 100 números aleatórios inteiros. 
+1. Modifique o exemplo 4 para que o incremento seja de 3 em 3 números. Qual a saída do programa agora?
 
-1. Crie um programa que, dado duas notas aleatórioas, calcula a média entre eles. Diga se ele foi APROVADO (média >= 6), se ele está REPROVADO (média <3), ou em recuperação (caso contrário). As notas devem ser geradas aleatóriamente.
+1. Faça um programa que imprima 200 números aleatórios inteiros. Use a estrura de repetição `for`.
 
-1. Crie um programa que, enquanto não gera dois números aleatóriamente maiores do que 10, não para a execução.
+
