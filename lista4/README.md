@@ -6,6 +6,7 @@
 * Cada questão deve ter seu próprio código independente.
 * O repositório contém alguns exemplos de códigos funcionais que ajudam na resolução da lista. A maioria das questões podem ser resolvidas alterando ou combinando esses códigos. Cada um deles é detalhado na seção a seguir chamada Revisão.
 * Para submeter a lista para avaliação basta criar um único arquivo .rar ou .zip contendo todos os códigos implementados. Eles devem ser submetidos via SUAP.
+* Os códigos devem conter um main testando as funcionalidades pedidas
 
 ---
 
@@ -112,3 +113,16 @@ public class exemplo_04 {
 A palavra reservada `return` trata de encaminhar ao main a reposta da função. Repare que agora a sua declaração é precedida por `int` antes do nome `funcao_exemplo` ao invés de `void`. Isso porque deve-se declarar qual o tipo de retorno da variável da função. Como foi visto antes, se não houver retorno, usa-se a palavra `void` para representar isso. 
 
 ---
+
+## Questões
+
+
+1. Faça uma função que calcule a média entre dois números.
+
+1. Faça uma função que imprime "Aprovado" caso o parâmetro seja maior do que 6, Reprovado caso o parâmetro seja menor do que 3 e Recuperação caso contrário.
+
+1. Crie um programa que usa as duas funções implementadas acima para pedir ao usuário duas notas, calcular uma média e imprimir se "Aprovado", "Reprovado" ou "Recuperação".
+
+1. Faça uma função que imprima `N` números aleatórios interios entre 0 e 100. `N` deve ser um parâmetro dessa função. Dica: Use a questão 4 da lista 2 como base.
+
+1. Crie uma função que, dado um número inteiro x, imprime a sua tabuada, isto é, seu produto com 1,2,3,10.
