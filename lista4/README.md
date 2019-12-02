@@ -72,3 +72,24 @@ public class exemplo_02 {
 
 Espero que você tenha pensado que a saída do exemplo 2 é exatamente igual a do primeiro exemplo mas duplicada, isso porque a função foi chamada duas vezes!
 
+Vamos agora mostrar como passar parâmetros para a função. Veja o exemplo a seguir:
+
+### Exemplo 3 - Entrada de dados na função
+
+```java
+public class exemplo_03 {
+    public static void funcao_exemplo(int a, int b){
+        System.out.println(a+b);
+    }
+    public static void main(String[] args) {
+        funcao_exemplo(1,2);
+        int teste1 = 1;
+        int teste2 = 2;
+        funcao_exemplo(teste1,teste2);
+    }
+}
+```
+
+O exemplo acima mostra uma simples função que soma dois números inteiros `a` e `b`. Quando a função é chamada no `main` duas variáveis devem ser passadas como parâmetros para que a função seja executada. Isso pode ser feito de forma direta, como a primeira instrução do main `funcao_exemplo(1,2)` ou por meio de variáveis declaradas previamente `funcao_exemplo(teste1,teste2)`. Separa-se os parâmetros por meio de vírgulas no uso. Na declaração usa-se também as vírgulas deixando claro o tipo de cada variável. Como nos exemplos anteriores, caso não haja parâmetro, ou seja, entradas para a função, deve-se deixar apenas os parênteses.
+
+### Exemplo 4 - Saída de dados da função
