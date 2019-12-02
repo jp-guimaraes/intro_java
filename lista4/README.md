@@ -93,3 +93,22 @@ public class exemplo_03 {
 O exemplo acima mostra uma simples função que soma dois números inteiros `a` e `b`. Quando a função é chamada no `main` duas variáveis devem ser passadas como parâmetros para que a função seja executada. Isso pode ser feito de forma direta, como a primeira instrução do main `funcao_exemplo(1,2)` ou por meio de variáveis declaradas previamente `funcao_exemplo(teste1,teste2)`. Separa-se os parâmetros por meio de vírgulas no uso. Na declaração usa-se também as vírgulas deixando claro o tipo de cada variável. Como nos exemplos anteriores, caso não haja parâmetro, ou seja, entradas para a função, deve-se deixar apenas os parênteses.
 
 ### Exemplo 4 - Saída de dados da função
+
+Agora vamos ver como `java` trata da retirada de dados de uma função. Vamos modificar o exemplo 3 para que a função exemplo apenas realize a computação. Depois, a função vai **retornar** o calculo para o main que a invocou. Veja:
+
+```java
+public class exemplo_04 {
+    public static int funcao_exemplo(int a, int b){
+        return (a+b);
+    }
+    
+    public static void main(String[] args) {
+        int teste = funcao_exemplo(1,2);
+        System.out.println(teste);
+    }
+}
+```
+
+A palavra reservada `return` trata de encaminhar ao main a reposta da função. Repare que agora a sua declaração é precedida por `int` antes do nome `funcao_exemplo` ao invés de `void`. Isso porque deve-se declarar qual o tipo de retorno da variável da função. Como foi visto antes, se não houver retorno, usa-se a palavra `void` para representar isso. 
+
+---
