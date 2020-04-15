@@ -1,0 +1,1 @@
+Exemplo de operações em variávies booleanas e numéricas
